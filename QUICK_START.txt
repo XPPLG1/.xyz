@@ -1,0 +1,76 @@
+═══════════════════════════════════════════════════════════
+   PANDUAN SETUP CEPAT - CLASS WEBSITE
+═══════════════════════════════════════════════════════════
+
+📌 LANGKAH-LANGKAH PENTING:
+
+1. INSTALL NODE.JS
+   → Download: https://nodejs.org/
+   → Install seperti biasa
+   → Cek: buka CMD, ketik: node -v
+
+2. INSTALL MYSQL
+   → Download: https://dev.mysql.com/downloads/mysql/
+   → Install seperti biasa
+   → Pastikan MySQL service berjalan
+
+3. INSTALL DEPENDENCIES
+   → Buka CMD/PowerShell
+   → cd C:\Users\USER\Desktop\CODING\TRY
+   → npm install
+
+4. SETUP DATABASE
+   → Buka MySQL (Workbench/phpMyAdmin/CMD)
+   → Jalankan SQL ini:
+   
+   CREATE DATABASE class_website;
+   USE class_website;
+   
+   → Import file database.sql
+   → Atau copy-paste isi database.sql
+
+5. KONFIGURASI DATABASE
+   → Buka file: server.js
+   → Edit baris 18-19:
+   
+   user: 'root',        // Ganti username MySQL Anda
+   password: '',        // Ganti password MySQL Anda
+   
+   → Save file (Ctrl+S)
+
+6. JALANKAN SERVER
+   → Di CMD, jalankan: npm start
+   → Atau double-click: start.bat
+   
+   → Server akan jalan di: http://localhost:3000
+
+7. BUKA WEBSITE
+   → Buka browser
+   → Ketik: http://localhost:3000
+   → Website harus muncul!
+
+═══════════════════════════════════════════════════════════
+   TROUBLESHOOTING
+═══════════════════════════════════════════════════════════
+
+❌ Error "Cannot find module"?
+   → Jalankan: npm install
+
+❌ Error "Access denied"?
+   → Cek username/password di server.js
+   → Pastikan MySQL service berjalan
+
+❌ Error "Unknown database"?
+   → Pastikan database sudah dibuat (langkah 4)
+   → Cek nama database di server.js
+
+❌ Website tidak terbuka?
+   → Pastikan server masih running (CMD tidak ditutup)
+   → Cek error di CMD
+
+═══════════════════════════════════════════════════════════
+
+📖 Untuk panduan detail, baca: SETUP_GUIDE.md
+
+═══════════════════════════════════════════════════════════
+

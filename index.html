@@ -1,0 +1,3611 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profil Kelas X PPLG 1 SMK Pariwisata Metland School: anggota, penghargaan, dan kegiatan.">
+    <title>Kelas X PPLG 1 - SMK Pariwisata Metland School Cileungsi</title>
+    <meta property="og:title" content="Kelas X PPLG 1 - SMK Pariwisata Metland School">
+    <meta property="og:description" content="Kenal lebih dekat dengan Kelas X PPLG 1: anggota, penghargaan, dan kegiatan.">
+    <meta property="og:image" content="images/XPPLG1.jpg">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="images/Logo%20Tab.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #41b381 0%, #4fadb1 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: white;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .school-info h1 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 2px;
+        }
+
+        .school-info p {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu li a:hover {
+            color: #667eea;
+        }
+
+        .nav-menu li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, #667eea, #4ba285);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu li a:hover::after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-top: 100px;
+            padding: 40px 0;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 60px;
+            color: white;
+            position: relative;
+            padding: 80px 20px;
+            background-image: url('images/XPPLG1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(65, 179, 129, 0.75) 0%, rgba(75, 145, 162, 0.75) 100%);
+            backdrop-filter: blur(1px);
+            z-index: 0;
+        }
+
+        .hero-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Class Info Section */
+        .class-info {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .class-info h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            background: linear-gradient(45deg, #41b381, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .class-description {
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        /* Students Grid */
+        .students-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .students-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            background: linear-gradient(45deg,#41b381, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .students-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .student-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: visible;
+        }
+
+        .student-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .student-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 3px solid #41b381;
+            box-shadow: 0 4px 15px rgba(65, 179, 129, 0.3);
+        }
+
+        .student-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .student-card:hover .student-photo img {
+            transform: scale(1.1);
+        }
+
+        .student-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .student-role {
+            font-size: 0.9rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        /* Chips */
+        .chips { display:flex; gap:6px; justify-content:center; flex-wrap:wrap; margin-top:8px; }
+        .chip {
+            font-size: 0.7rem;
+            background: rgba(65,179,129,0.12);
+            color: #2d6a5a;
+            border: 1px solid rgba(65,179,129,0.35);
+            padding: 4px 8px;
+            border-radius: 999px;
+            font-weight: 600;
+        }
+
+        /* Wrapper untuk nama dan role di mobile */
+        @media (max-width: 575px) {
+            .student-name + .student-role {
+                margin-top: 2px;
+            }
+        }
+
+        /* Wali Kelas Card - Special Styling */
+        .wali-card {
+            background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%);
+            border: 3px solid #ffd700;
+            box-shadow: 0 10px 30px rgba(118, 75, 162, 0.4);
+            position: relative;
+            overflow: visible;
+        }
+
+        .wali-card:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(118, 75, 162, 0.6);
+        }
+
+        .teacher-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            color: #764ba2;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+            animation: pulse 2s infinite;
+            z-index: 10;
+        }
+
+        .talented-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            color: #2d6a5a;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+            animation: pulse 2s infinite;
+            z-index: 10;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .teacher-photo {
+            border: 4px solid #ffd700;
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.5);
+            width: 100px;
+            height: 100px;
+            margin: 10px auto 20px;
+        }
+
+        /* Gallery filter buttons */
+        .gallery-filter {
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+        .gallery-filter.active {
+            background: rgba(65,179,129,0.15) !important;
+            border-color: rgba(65,179,129,0.45) !important;
+        }
+        .gallery-filter:focus-visible {
+            outline: 3px solid rgba(65,179,129,0.5);
+            outline-offset: 2px;
+        }
+
+        /* Search input tweaks for mobile ergonomics */
+        .search-box input {
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        /* Extra responsive refinements */
+        @media (max-width: 575px) {
+            .search-box input { font-size: 16px; }
+            .awards-grid { gap: 12px !important; }
+        }
+
+        .teacher-name {
+            font-size: 1.1rem;
+            color: white;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+        }
+
+        .teacher-role {
+            font-size: 1rem;
+            color: #ffd700;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-top: 5px;
+        }
+
+        /* Awards Section */
+        .awards-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .awards-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            background: linear-gradient(45deg, #41b381, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .award-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .award-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .award-icon {
+            font-size: 3rem;
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+
+        .award-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .award-description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .nav-menu {
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            gap: 15px;
+        }
+
+        /* Responsive Design */
+        
+        /* Large Desktop (1200px+) */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1400px;
+            }
+            
+            .hero-section h1 {
+                font-size: 4rem;
+            }
+            
+            .students-grid {
+                grid-template-columns: repeat(6, 1fr);
+            }
+            
+            .awards-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* Desktop (992px - 1199px) */
+        @media (max-width: 1199px) and (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+            
+            .hero-section h1 {
+                font-size: 3.5rem;
+            }
+            
+            .students-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+            
+            .awards-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Tablet (768px - 991px) */
+        @media (max-width: 991px) and (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+            
+            .hero-section h1 {
+                font-size: 3rem;
+            }
+            
+            .hero-section p {
+                font-size: 1.1rem;
+            }
+            
+            .students-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 25px;
+            }
+            
+            .awards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .class-info, .students-section, .awards-section {
+                padding: 30px;
+            }
+            
+            .student-card {
+                padding: 15px;
+            }
+            
+            .student-photo {
+                width: 70px;
+                height: 70px;
+                border: 2px solid #41b381;
+            }
+        }
+
+        /* Mobile Landscape (576px - 767px) */
+        @media (max-width: 767px) and (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+            
+            .header-content {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            .hero-section {
+                background-attachment: scroll;
+            }
+            
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-section p {
+                font-size: 1rem;
+            }
+            
+            .students-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            /* Wali Card - full width di tablet */
+            .wali-card {
+                grid-column: 1 / -1;
+                margin-bottom: 25px;
+            }
+            
+            .awards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .class-info, .students-section, .awards-section {
+                padding: 25px;
+            }
+            
+            .student-card {
+                padding: 15px;
+                min-height: 140px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .student-photo {
+                width: 60px;
+                height: 60px;
+                border: 2px solid #41b381;
+                margin-bottom: 10px;
+            }
+            
+            .student-name {
+                font-size: 0.9rem;
+                text-align: center;
+                line-height: 1.3;
+            }
+            
+            .student-role {
+                font-size: 0.8rem;
+                text-align: center;
+            }
+
+            /* Wali Card Mobile */
+            .wali-card .teacher-badge {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+                top: -10px;
+                right: -10px;
+            }
+
+            .teacher-photo {
+                width: 80px;
+                height: 80px;
+            }
+
+            .teacher-name {
+                font-size: 1rem;
+            }
+
+            .teacher-role {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Mobile Portrait (max-width: 575px) */
+        @media (max-width: 575px) {
+            .container {
+                max-width: 100%;
+                padding: 0 15px;
+            }
+            
+            .header {
+                padding: 0;
+            }
+            
+            .header-content {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0;
+            }
+            
+            .logo {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .school-info h1 {
+                font-size: 14px;
+            }
+            
+            .school-info p {
+                font-size: 10px;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+                font-size: 1.2rem;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .nav-menu.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(10px);
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                gap: 15px;
+                z-index: 1000;
+            }
+            
+            .main-content {
+                margin-top: 80px;
+            }
+            
+            .hero-section {
+                padding: 40px 20px;
+                background-attachment: scroll;
+            }
+            
+            .hero-section h1 {
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+            
+            .hero-section p {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+            
+            .class-info h2, .students-section h2, .awards-section h2 {
+                font-size: 1.8rem;
+                margin-bottom: 25px;
+            }
+            
+            .class-description {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+            
+            .students-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            /* Wali Card - full width di mobile */
+            .wali-card {
+                grid-column: 1 / -1;
+                margin-bottom: 20px;
+            }
+            
+            .awards-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .class-info, .students-section, .awards-section {
+                padding: 20px;
+                margin-bottom: 40px;
+            }
+            
+            .student-card {
+                padding: 10px;
+                min-height: auto;
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                gap: 12px;
+                align-items: center;
+            }
+            
+            .student-photo {
+                width: 50px;
+                height: 50px;
+                border: 2px solid #41b381;
+                margin: 0;
+                grid-row: 1 / 3;
+                align-self: center;
+            }
+
+            .student-name {
+                font-size: 0.85rem;
+                margin-bottom: 3px;
+                text-align: left;
+                line-height: 1.2;
+                font-weight: 600;
+                grid-column: 2;
+            }
+            
+            .student-role {
+                font-size: 0.7rem;
+                text-align: left;
+                grid-column: 2;
+            }
+
+            .chips {
+                grid-column: 2;
+                grid-row: 3;
+                margin-top: 5px;
+                justify-content: flex-start;
+            }
+
+            .chip {
+                font-size: 0.65rem;
+                padding: 3px 8px;
+            }
+
+            .talented-badge {
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+                top: -10px;
+                right: -10px;
+            }
+
+            /* Wali Card Mobile Portrait */
+            .wali-card {
+                padding: 20px 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                grid-column: 1 / -1;
+                margin-bottom: 15px;
+            }
+
+            .wali-card .teacher-badge {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+                top: -10px;
+                right: -10px;
+            }
+
+            .wali-card .teacher-photo {
+                width: 85px;
+                height: 85px;
+                margin: 5px auto 15px;
+            }
+
+            .wali-card .teacher-name {
+                font-size: 0.95rem;
+                text-align: center;
+                margin-bottom: 8px;
+            }
+
+            .wali-card .teacher-role {
+                font-size: 0.8rem;
+                text-align: center;
+                margin-top: 5px;
+            }
+            
+            .award-card {
+                padding: 20px;
+            }
+            
+            .award-icon {
+                font-size: 2.5rem;
+                margin-bottom: 15px;
+            }
+            
+            .award-title {
+                font-size: 1.1rem;
+                margin-bottom: 8px;
+            }
+            
+            .award-description {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+            
+            .footer {
+                padding: 20px 0;
+            }
+            
+            .footer p {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Extra Small Mobile (max-width: 375px) */
+        @media (max-width: 375px) {
+            .container {
+                padding: 0 10px;
+            }
+            
+            .hero-section h1 {
+                font-size: 1.8rem;
+            }
+            
+            .students-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            
+            .student-card {
+                padding: 8px;
+                display: grid;
+                grid-template-columns: 45px 1fr;
+                gap: 10px;
+                align-items: center;
+            }
+            
+            .student-photo {
+                width: 45px;
+                height: 45px;
+                border: 2px solid #41b381;
+                margin: 0;
+                grid-row: 1 / 3;
+                align-self: center;
+            }
+            
+            .student-name {
+                font-size: 0.8rem;
+                margin-bottom: 2px;
+                line-height: 1.2;
+                font-weight: 600;
+                text-align: left;
+                grid-column: 2;
+            }
+            
+            .student-role {
+                font-size: 0.7rem;
+                text-align: left;
+                grid-column: 2;
+            }
+
+            .chips {
+                grid-column: 2;
+                grid-row: 3;
+                margin-top: 4px;
+                justify-content: flex-start;
+            }
+
+            /* Wali Card Extra Small */
+            .wali-card {
+                padding: 18px 12px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .wali-card .teacher-photo {
+                width: 75px;
+                height: 75px;
+                margin-right: 0;
+            }
+
+            .wali-card .teacher-name {
+                text-align: center;
+                margin-bottom: 8px;
+            }
+
+            .wali-card .teacher-role {
+                text-align: center;
+                margin-top: 5px;
+            }
+        }
+
+        /* Very Small Mobile (max-width: 320px) */
+        @media (max-width: 320px) {
+            .container {
+                padding: 0 8px;
+            }
+            
+            .students-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+            
+            .student-card {
+                padding: 6px;
+                min-height: auto;
+                display: grid;
+                grid-template-columns: 40px 1fr;
+                gap: 8px;
+                align-items: center;
+            }
+            
+            .student-photo {
+                width: 40px;
+                height: 40px;
+                border: 1px solid #41b381;
+                margin: 0;
+                grid-row: 1 / 3;
+                align-self: center;
+            }
+            
+            .student-name {
+                font-size: 0.75rem;
+                font-weight: 600;
+                text-align: left;
+                grid-column: 2;
+            }
+            
+            .student-role {
+                font-size: 0.65rem;
+                text-align: left;
+                grid-column: 2;
+            }
+
+            .chips {
+                grid-column: 2;
+                grid-row: 3;
+                margin-top: 4px;
+                justify-content: flex-start;
+            }
+
+            .chip {
+                font-size: 0.65rem;
+                padding: 3px 6px;
+            }
+
+            .talented-badge {
+                width: 32px;
+                height: 32px;
+                font-size: 14px;
+                top: -8px;
+                right: -8px;
+            }
+
+            /* Wali Card Very Small */
+            .wali-card {
+                padding: 15px 10px;
+            }
+
+            .wali-card .teacher-badge {
+                width: 32px;
+                height: 32px;
+                font-size: 14px;
+                top: -8px;
+                right: -8px;
+            }
+
+            .wali-card .teacher-photo {
+                width: 70px;
+                height: 70px;
+            }
+
+            .wali-card .teacher-name {
+                font-size: 0.75rem;
+                margin-bottom: 6px;
+            }
+
+            .wali-card .teacher-role {
+                font-size: 0.7rem;
+                margin-top: 4px;
+            }
+            
+            .class-info, .students-section, .awards-section {
+                padding: 15px;
+            }
+        }
+
+        /* Scroll animations */
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .scroll-animate.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* CTA styles */
+        .hero-actions {
+            margin-top: 22px;
+            display: inline-flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+            border: 0;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background: linear-gradient(45deg, #41b381, #4ba285);
+            color: #fff;
+            box-shadow: 0 6px 16px rgba(65, 179, 129, 0.35);
+        }
+        .btn-secondary {
+            background: rgba(255,255,255,0.9);
+            color: #276a5a;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        }
+        .btn:focus-visible {
+            outline: 3px solid #ffd700;
+            outline-offset: 2px;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .btn:active { transform: translateY(0); }
+
+        /* Skip link */
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+        .skip-link:focus {
+            left: 10px;
+            top: 10px;
+            width: auto;
+            height: auto;
+            padding: 8px 12px;
+            background: #000;
+            color: #fff;
+            border-radius: 6px;
+            z-index: 2000;
+        }
+
+        /* Theme Button on Card */
+        .theme-toggle-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 0.85rem;
+            z-index: 10;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+
+        .student-card:hover .theme-toggle-btn {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .theme-toggle-btn:hover {
+            background: rgba(65, 179, 129, 0.9);
+            color: white;
+            transform: scale(1.1);
+            box-shadow: 0 3px 10px rgba(65, 179, 129, 0.4);
+        }
+
+        /* Theme Modal */
+        .theme-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            padding: 20px;
+        }
+
+        .theme-modal.active {
+            display: flex;
+        }
+
+        .theme-modal-content {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .theme-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .theme-modal-header h3 {
+            font-size: 1.2rem;
+            color: #333;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .theme-modal-close {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .theme-modal-close:hover {
+            background: rgba(0, 0, 0, 0.1);
+            transform: rotate(90deg);
+        }
+
+        .theme-modal-student-info {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .theme-modal-student-info .student-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .theme-modal-options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .theme-option-btn {
+            padding: 12px 8px;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            background: white;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+        }
+
+        .theme-option-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            border-color: #41b381;
+        }
+
+        .theme-option-btn.active {
+            border-color: #41b381;
+            background: rgba(65, 179, 129, 0.1);
+            color: #2d6a5a;
+            font-weight: 600;
+        }
+
+        /* Theme: Default */
+        .student-card.theme-default {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .student-card.theme-default::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(65, 179, 129, 0.1), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .student-card.theme-default:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(65, 179, 129, 0.3);
+            border-color: #41b381;
+        }
+
+        .student-card.theme-default .student-photo {
+            border-color: #41b381;
+            animation: gentlePulse 3s ease-in-out infinite;
+        }
+
+        @keyframes gentlePulse {
+            0%, 100% { box-shadow: 0 4px 15px rgba(65, 179, 129, 0.3); }
+            50% { box-shadow: 0 4px 25px rgba(65, 179, 129, 0.6); }
+        }
+
+        .student-card.theme-default .student-role {
+            color: #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .student-card.theme-default:hover .student-role {
+            color: #41b381;
+            font-weight: 600;
+        }
+
+        /* Theme: Bloody/Red */
+        .student-card.theme-bloody {
+            background: linear-gradient(135deg, #8b0000 0%, #dc143c 50%, #8b0000 100%);
+            background-size: 200% 200%;
+            color: white;
+            border: 3px solid #ff0000;
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.6), inset 0 0 30px rgba(139, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            animation: bloodPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes bloodPulse {
+            0%, 100% { 
+                box-shadow: 0 0 30px rgba(255, 0, 0, 0.6), inset 0 0 30px rgba(139, 0, 0, 0.3);
+                transform: scale(1);
+            }
+            50% { 
+                box-shadow: 0 0 50px rgba(255, 0, 0, 0.9), inset 0 0 40px rgba(139, 0, 0, 0.5);
+                transform: scale(1.01);
+            }
+        }
+
+        .student-card.theme-bloody::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 0, 0, 0.3) 0%, transparent 70%);
+            animation: bloodDrip 4s infinite;
+        }
+
+        @keyframes bloodDrip {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(15px, 25px) rotate(8deg); }
+            50% { transform: translate(-10px, 40px) rotate(-5deg); }
+            75% { transform: translate(20px, 20px) rotate(10deg); }
+        }
+
+        .student-card.theme-bloody::after {
+            content: '🩸';
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            font-size: 1.2rem;
+            opacity: 0.6;
+            animation: bloodDrop 2s ease-in-out infinite;
+        }
+
+        @keyframes bloodDrop {
+            0%, 100% { transform: translateY(0) scale(1); opacity: 0.6; }
+            50% { transform: translateY(5px) scale(1.2); opacity: 0.9; }
+        }
+
+        .student-card.theme-bloody:hover {
+            transform: translateY(-15px) scale(1.05) rotate(1deg);
+            box-shadow: 0 20px 60px rgba(255, 0, 0, 0.8), inset 0 0 50px rgba(139, 0, 0, 0.5);
+        }
+
+        .student-card.theme-bloody .student-photo {
+            border-color: #ff0000;
+            border-width: 4px;
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.8), inset 0 0 20px rgba(255, 0, 0, 0.3);
+            animation: photoPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes photoPulse {
+            0%, 100% { 
+                box-shadow: 0 0 30px rgba(255, 0, 0, 0.8), inset 0 0 20px rgba(255, 0, 0, 0.3);
+            }
+            50% { 
+                box-shadow: 0 0 50px rgba(255, 0, 0, 1), inset 0 0 30px rgba(255, 0, 0, 0.5);
+            }
+        }
+
+        .student-card.theme-bloody .student-name {
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 0, 0, 0.6);
+            animation: textGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes textGlow {
+            0%, 100% { text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 0, 0, 0.6); }
+            50% { text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.9), 0 0 25px rgba(255, 0, 0, 0.9); }
+        }
+
+        .student-card.theme-bloody .student-role {
+            color: #ffcccc;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .student-card.theme-bloody .chip {
+            background: rgba(255, 255, 255, 0.25);
+            color: white;
+            border-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Theme: Halloween */
+        .student-card.theme-halloween {
+            background: linear-gradient(135deg, #1a0033 0%, #4a1a6b 30%, #ff6600 70%, #ff8800 100%);
+            background-size: 300% 300%;
+            border: 3px solid #ff6600;
+            box-shadow: 0 0 40px rgba(255, 102, 0, 0.7), inset 0 0 30px rgba(74, 26, 107, 0.4);
+            position: relative;
+            overflow: hidden;
+            animation: halloweenGradient 5s ease infinite, halloweenGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes halloweenGradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        @keyframes halloweenGlow {
+            0%, 100% { box-shadow: 0 0 40px rgba(255, 102, 0, 0.7), inset 0 0 30px rgba(74, 26, 107, 0.4); }
+            50% { box-shadow: 0 0 60px rgba(255, 102, 0, 1), inset 0 0 50px rgba(74, 26, 107, 0.6); }
+        }
+
+        .student-card.theme-halloween::before {
+            content: '👻';
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            font-size: 1.8rem;
+            opacity: 0.5;
+            animation: float 3s ease-in-out infinite, ghostGlow 2s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-12px) rotate(-5deg); }
+            50% { transform: translateY(-20px) rotate(0deg); }
+            75% { transform: translateY(-12px) rotate(5deg); }
+        }
+
+        @keyframes ghostGlow {
+            0%, 100% { filter: drop-shadow(0 0 5px rgba(255, 204, 0, 0.5)); }
+            50% { filter: drop-shadow(0 0 15px rgba(255, 204, 0, 1)); }
+        }
+
+        .student-card.theme-halloween::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(255, 102, 0, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(139, 0, 0, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(255, 204, 0, 0.1) 0%, transparent 70%);
+            animation: spookyPulse 4s ease-in-out infinite;
+        }
+
+        @keyframes spookyPulse {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.1); }
+        }
+
+        .student-card.theme-halloween:hover {
+            transform: translateY(-15px) scale(1.05) rotate(-1deg);
+            box-shadow: 0 25px 70px rgba(255, 102, 0, 0.9), inset 0 0 60px rgba(74, 26, 107, 0.6);
+        }
+
+        .student-card.theme-halloween .student-photo {
+            border-color: #ff6600;
+            border-width: 4px;
+            box-shadow: 0 0 35px rgba(255, 102, 0, 0.9), inset 0 0 25px rgba(255, 204, 0, 0.3);
+            animation: photoGlow 2.5s ease-in-out infinite;
+        }
+
+        @keyframes photoGlow {
+            0%, 100% { 
+                box-shadow: 0 0 35px rgba(255, 102, 0, 0.9), inset 0 0 25px rgba(255, 204, 0, 0.3);
+            }
+            50% { 
+                box-shadow: 0 0 55px rgba(255, 102, 0, 1), inset 0 0 40px rgba(255, 204, 0, 0.5);
+            }
+        }
+
+        .student-card.theme-halloween .student-name {
+            color: #ffcc00;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 204, 0, 0.8);
+            animation: nameFlicker 3s ease-in-out infinite;
+        }
+
+        @keyframes nameFlicker {
+            0%, 100% { 
+                text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 204, 0, 0.8);
+                opacity: 1;
+            }
+            50% { 
+                text-shadow: 2px 2px 15px rgba(0, 0, 0, 1), 0 0 35px rgba(255, 204, 0, 1);
+                opacity: 0.95;
+            }
+        }
+
+        .student-card.theme-halloween .student-role {
+            color: #ff9900;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 153, 0, 0.6);
+        }
+
+        .student-card.theme-halloween .chip {
+            background: rgba(255, 102, 0, 0.4);
+            color: #ffcc00;
+            border-color: #ff6600;
+            box-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Theme: Christmas */
+        .student-card.theme-christmas {
+            background: linear-gradient(135deg, #006400 0%, #228b22 30%, #dc143c 70%, #c41e3a 100%);
+            background-size: 200% 200%;
+            border: 3px solid #ffd700;
+            box-shadow: 0 0 50px rgba(255, 215, 0, 0.7), inset 0 0 40px rgba(34, 139, 34, 0.4);
+            position: relative;
+            overflow: hidden;
+            animation: christmasGradient 4s ease infinite, christmasGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes christmasGradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        @keyframes christmasGlow {
+            0%, 100% { box-shadow: 0 0 50px rgba(255, 215, 0, 0.7), inset 0 0 40px rgba(34, 139, 34, 0.4); }
+            50% { box-shadow: 0 0 70px rgba(255, 215, 0, 1), inset 0 0 60px rgba(34, 139, 34, 0.6); }
+        }
+
+        .student-card.theme-christmas::before {
+            content: '🎄';
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            font-size: 1.5rem;
+            opacity: 0.6;
+            animation: sparkle 2s ease-in-out infinite, treeShake 3s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0.6; transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5)); }
+            50% { opacity: 1; transform: scale(1.15) rotate(5deg); filter: drop-shadow(0 0 15px rgba(255, 215, 0, 1)); }
+        }
+
+        @keyframes treeShake {
+            0%, 100% { transform: translateX(0) rotate(0deg); }
+            25% { transform: translateX(-3px) rotate(-2deg); }
+            75% { transform: translateX(3px) rotate(2deg); }
+        }
+
+        .student-card.theme-christmas::after {
+            content: '❄️';
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            font-size: 1.2rem;
+            opacity: 0.5;
+            animation: snow 4s linear infinite, snowGlow 2s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        @keyframes snow {
+            0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0.5; }
+            100% { transform: translateY(120px) rotate(720deg) scale(0.5); opacity: 0; }
+        }
+
+        @keyframes snowGlow {
+            0%, 100% { filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)); }
+            50% { filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1)); }
+        }
+
+        .student-card.theme-christmas:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 30px 80px rgba(255, 215, 0, 0.9), inset 0 0 70px rgba(34, 139, 34, 0.6);
+        }
+
+        .student-card.theme-christmas .student-photo {
+            border-color: #ffd700;
+            border-width: 4px;
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.9), inset 0 0 30px rgba(255, 215, 0, 0.3);
+            animation: photoSparkle 2.5s ease-in-out infinite;
+        }
+
+        @keyframes photoSparkle {
+            0%, 100% { 
+                box-shadow: 0 0 40px rgba(255, 215, 0, 0.9), inset 0 0 30px rgba(255, 215, 0, 0.3);
+            }
+            50% { 
+                box-shadow: 0 0 60px rgba(255, 215, 0, 1), inset 0 0 50px rgba(255, 215, 0, 0.5);
+            }
+        }
+
+        .student-card.theme-christmas .student-name {
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.8);
+            animation: nameGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes nameGlow {
+            0%, 100% { text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.8); }
+            50% { text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8), 0 0 35px rgba(255, 215, 0, 1); }
+        }
+
+        .student-card.theme-christmas .student-role {
+            color: #ffd700;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 215, 0, 0.8);
+            animation: roleShine 2s ease-in-out infinite;
+        }
+
+        @keyframes roleShine {
+            0%, 100% { text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 215, 0, 0.8); }
+            50% { text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 215, 0, 1); }
+        }
+
+        .student-card.theme-christmas .chip {
+            background: rgba(255, 215, 0, 0.4);
+            color: white;
+            border-color: #ffd700;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Theme: Lightning/Thunder */
+        .student-card.theme-lightning {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 30%, #16213e 70%, #0a0a0a 100%);
+            background-size: 200% 200%;
+            border: 3px solid #00ffff;
+            box-shadow: 0 0 50px rgba(0, 255, 255, 0.8), inset 0 0 40px rgba(22, 33, 62, 0.5);
+            position: relative;
+            overflow: hidden;
+            animation: lightningPulse 1.5s ease-in-out infinite, lightningFlash 3s infinite;
+        }
+
+        @keyframes lightningPulse {
+            0%, 100% { 
+                box-shadow: 0 0 50px rgba(0, 255, 255, 0.8), inset 0 0 40px rgba(22, 33, 62, 0.5);
+                transform: scale(1);
+            }
+            50% { 
+                box-shadow: 0 0 80px rgba(0, 255, 255, 1), inset 0 0 60px rgba(22, 33, 62, 0.7);
+                transform: scale(1.01);
+            }
+        }
+
+        @keyframes lightningFlash {
+            0%, 85%, 100% { opacity: 1; }
+            86%, 89% { opacity: 0.95; background-position: 0% 50%; }
+            90%, 93% { opacity: 1; background-position: 100% 50%; }
+        }
+
+        .student-card.theme-lightning::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), rgba(0, 255, 255, 0.8), rgba(255, 255, 255, 0.6), transparent);
+            animation: lightning 4s infinite;
+            z-index: 1;
+        }
+
+        @keyframes lightning {
+            0% { left: -100%; opacity: 0; }
+            10% { left: 100%; opacity: 1; }
+            11% { left: -100%; opacity: 0; }
+            100% { left: -100%; opacity: 0; }
+        }
+
+        .student-card.theme-lightning::after {
+            content: '⚡';
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            font-size: 1.8rem;
+            opacity: 0.8;
+            animation: thunder 1.5s infinite, lightningBolt 2s infinite;
+            z-index: 2;
+        }
+
+        @keyframes thunder {
+            0%, 100% { opacity: 0.8; transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.8)); }
+            50% { opacity: 1; transform: scale(1.3) rotate(10deg); filter: drop-shadow(0 0 20px rgba(0, 255, 255, 1)); }
+        }
+
+        @keyframes lightningBolt {
+            0%, 90%, 100% { opacity: 0.8; }
+            95% { opacity: 1; transform: scale(1.5); }
+        }
+
+        .student-card.theme-lightning:hover {
+            transform: translateY(-15px) scale(1.05) rotate(1deg);
+            box-shadow: 0 30px 90px rgba(0, 255, 255, 1), inset 0 0 70px rgba(22, 33, 62, 0.7);
+        }
+
+        .student-card.theme-lightning .student-photo {
+            border-color: #00ffff;
+            border-width: 4px;
+            box-shadow: 0 0 40px rgba(0, 255, 255, 1), inset 0 0 30px rgba(0, 255, 255, 0.5);
+            animation: photoLightning 2s ease-in-out infinite;
+        }
+
+        @keyframes photoLightning {
+            0%, 100% { 
+                box-shadow: 0 0 40px rgba(0, 255, 255, 1), inset 0 0 30px rgba(0, 255, 255, 0.5);
+            }
+            50% { 
+                box-shadow: 0 0 60px rgba(0, 255, 255, 1), inset 0 0 50px rgba(0, 255, 255, 0.8);
+            }
+        }
+
+        .student-card.theme-lightning .student-name {
+            color: #00ffff;
+            text-shadow: 0 0 15px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 0.8);
+            animation: nameFlash 2s ease-in-out infinite;
+        }
+
+        @keyframes nameFlash {
+            0%, 100% { text-shadow: 0 0 15px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 0.8); }
+            50% { text-shadow: 0 0 25px rgba(0, 255, 255, 1), 0 0 50px rgba(0, 255, 255, 1); }
+        }
+
+        .student-card.theme-lightning .student-role {
+            color: #ffff00;
+            text-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 20px rgba(255, 255, 0, 0.6);
+            animation: roleFlash 2.5s ease-in-out infinite;
+        }
+
+        @keyframes roleFlash {
+            0%, 100% { text-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 20px rgba(255, 255, 0, 0.6); }
+            50% { text-shadow: 0 0 20px rgba(255, 255, 0, 1), 0 0 40px rgba(255, 255, 0, 0.9); }
+        }
+
+        .student-card.theme-lightning .chip {
+            background: rgba(0, 255, 255, 0.3);
+            color: #00ffff;
+            border-color: #00ffff;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+            text-shadow: 0 0 5px rgba(0, 255, 255, 0.8);
+        }
+
+        /* Theme: Ocean */
+        .student-card.theme-ocean {
+            background: linear-gradient(135deg, #0077be 0%, #00a8e8 30%, #89cff0 70%, #0077be 100%);
+            background-size: 200% 200%;
+            border: 3px solid #0066aa;
+            box-shadow: 0 0 50px rgba(0, 119, 190, 0.6), inset 0 0 40px rgba(0, 168, 232, 0.4);
+            position: relative;
+            overflow: hidden;
+            animation: oceanWave 5s ease infinite, oceanGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes oceanWave {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        @keyframes oceanGlow {
+            0%, 100% { box-shadow: 0 0 50px rgba(0, 119, 190, 0.6), inset 0 0 40px rgba(0, 168, 232, 0.4); }
+            50% { box-shadow: 0 0 70px rgba(0, 119, 190, 0.9), inset 0 0 60px rgba(0, 168, 232, 0.6); }
+        }
+
+        .student-card.theme-ocean::before {
+            content: '🌊';
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            font-size: 1.5rem;
+            opacity: 0.6;
+            animation: waveFloat 3s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        @keyframes waveFloat {
+            0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.6; }
+            50% { transform: translateY(-8px) rotate(5deg); opacity: 0.9; }
+        }
+
+        .student-card.theme-ocean:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 30px 80px rgba(0, 119, 190, 0.9), inset 0 0 70px rgba(0, 168, 232, 0.6);
+        }
+
+        .student-card.theme-ocean .student-photo {
+            border-color: #0066aa;
+            border-width: 4px;
+            box-shadow: 0 0 40px rgba(0, 102, 170, 0.8), inset 0 0 30px rgba(0, 168, 232, 0.3);
+            animation: photoWave 3s ease-in-out infinite;
+        }
+
+        @keyframes photoWave {
+            0%, 100% { 
+                box-shadow: 0 0 40px rgba(0, 102, 170, 0.8), inset 0 0 30px rgba(0, 168, 232, 0.3);
+            }
+            50% { 
+                box-shadow: 0 0 60px rgba(0, 102, 170, 1), inset 0 0 50px rgba(0, 168, 232, 0.5);
+            }
+        }
+
+        .student-card.theme-ocean .student-name {
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .student-card.theme-ocean .student-role {
+            color: #ffff00;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6), 0 0 15px rgba(255, 255, 0, 0.8);
+        }
+
+        .student-card.theme-ocean .chip {
+            background: rgba(255, 255, 255, 0.4);
+            color: white;
+            border-color: rgba(255, 255, 255, 0.6);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Theme: Sunset */
+        .student-card.theme-sunset {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 30%, #ffd700 70%, #ff8800 100%);
+            background-size: 200% 200%;
+            border: 3px solid #ff6b6b;
+            box-shadow: 0 0 50px rgba(255, 107, 107, 0.7), inset 0 0 40px rgba(255, 165, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+            animation: sunsetGradient 6s ease infinite, sunsetGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes sunsetGradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        @keyframes sunsetGlow {
+            0%, 100% { box-shadow: 0 0 50px rgba(255, 107, 107, 0.7), inset 0 0 40px rgba(255, 165, 0, 0.4); }
+            50% { box-shadow: 0 0 70px rgba(255, 107, 107, 1), inset 0 0 60px rgba(255, 165, 0, 0.6); }
+        }
+
+        .student-card.theme-sunset::before {
+            content: '🌅';
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            font-size: 1.5rem;
+            opacity: 0.7;
+            animation: sunRise 4s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        @keyframes sunRise {
+            0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.7; }
+            50% { transform: translateY(-10px) rotate(10deg); opacity: 1; }
+        }
+
+        .student-card.theme-sunset:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 30px 80px rgba(255, 107, 107, 1), inset 0 0 70px rgba(255, 165, 0, 0.6);
+        }
+
+        .student-card.theme-sunset .student-photo {
+            border-color: #ff6b6b;
+            border-width: 4px;
+            box-shadow: 0 0 40px rgba(255, 107, 107, 0.9), inset 0 0 30px rgba(255, 215, 0, 0.3);
+            animation: photoSunset 3s ease-in-out infinite;
+        }
+
+        @keyframes photoSunset {
+            0%, 100% { 
+                box-shadow: 0 0 40px rgba(255, 107, 107, 0.9), inset 0 0 30px rgba(255, 215, 0, 0.3);
+            }
+            50% { 
+                box-shadow: 0 0 60px rgba(255, 107, 107, 1), inset 0 0 50px rgba(255, 215, 0, 0.5);
+            }
+        }
+
+        .student-card.theme-sunset .student-name {
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .student-card.theme-sunset .student-role {
+            color: #ffff00;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6), 0 0 15px rgba(255, 255, 0, 0.9);
+        }
+
+        .student-card.theme-sunset .chip {
+            background: rgba(255, 255, 255, 0.4);
+            color: white;
+            border-color: rgba(255, 255, 255, 0.6);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Theme: Dark Mode */
+        .student-card.theme-dark {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+            background-size: 200% 200%;
+            border: 3px solid #444;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.8), inset 0 0 30px rgba(68, 68, 68, 0.3);
+            position: relative;
+            overflow: hidden;
+            animation: darkPulse 4s ease-in-out infinite;
+        }
+
+        @keyframes darkPulse {
+            0%, 100% { 
+                box-shadow: 0 0 40px rgba(0, 0, 0, 0.8), inset 0 0 30px rgba(68, 68, 68, 0.3);
+                background-position: 0% 50%;
+            }
+            50% { 
+                box-shadow: 0 0 60px rgba(0, 0, 0, 1), inset 0 0 50px rgba(68, 68, 68, 0.5);
+                background-position: 100% 50%;
+            }
+        }
+
+        .student-card.theme-dark:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 1), inset 0 0 60px rgba(68, 68, 68, 0.5);
+        }
+
+        .student-card.theme-dark .student-photo {
+            border-color: #666;
+            border-width: 4px;
+            box-shadow: 0 0 30px rgba(100, 100, 100, 0.6), inset 0 0 20px rgba(100, 100, 100, 0.2);
+            animation: photoDark 3s ease-in-out infinite;
+        }
+
+        @keyframes photoDark {
+            0%, 100% { 
+                box-shadow: 0 0 30px rgba(100, 100, 100, 0.6), inset 0 0 20px rgba(100, 100, 100, 0.2);
+            }
+            50% { 
+                box-shadow: 0 0 50px rgba(100, 100, 100, 0.9), inset 0 0 40px rgba(100, 100, 100, 0.4);
+            }
+        }
+
+        .student-card.theme-dark .student-name {
+            color: #e0e0e0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9), 0 0 15px rgba(224, 224, 224, 0.2);
+        }
+
+        .student-card.theme-dark .student-role {
+            color: #888;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8), 0 0 10px rgba(136, 136, 136, 0.3);
+        }
+
+        .student-card.theme-dark .chip {
+            background: rgba(100, 100, 100, 0.4);
+            color: #ccc;
+            border-color: #555;
+            box-shadow: 0 0 10px rgba(100, 100, 100, 0.4);
+        }
+
+        /* Theme: Neon */
+        .student-card.theme-neon {
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 30%, #24243e 70%, #0f0c29 100%);
+            background-size: 200% 200%;
+            border: 3px solid #ff00ff;
+            box-shadow: 0 0 60px rgba(255, 0, 255, 0.9), inset 0 0 40px rgba(48, 43, 99, 0.5);
+            position: relative;
+            overflow: hidden;
+            animation: neonGradient 4s ease infinite, neonPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes neonGradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        @keyframes neonPulse {
+            0%, 100% { 
+                box-shadow: 0 0 60px rgba(255, 0, 255, 0.9), inset 0 0 40px rgba(48, 43, 99, 0.5);
+                transform: scale(1);
+            }
+            50% { 
+                box-shadow: 0 0 90px rgba(255, 0, 255, 1), inset 0 0 60px rgba(48, 43, 99, 0.7);
+                transform: scale(1.01);
+            }
+        }
+
+        .student-card.theme-neon::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 15px;
+            background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff, #00ffff);
+            background-size: 300% 300%;
+            z-index: -1;
+            filter: blur(12px);
+            opacity: 0.8;
+            animation: neonGlow 2s ease-in-out infinite, neonBorder 3s ease infinite;
+        }
+
+        @keyframes neonGlow {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; }
+        }
+
+        @keyframes neonBorder {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .student-card.theme-neon:hover {
+            transform: translateY(-15px) scale(1.05) rotate(1deg);
+            box-shadow: 0 35px 100px rgba(255, 0, 255, 1), inset 0 0 70px rgba(48, 43, 99, 0.7);
+        }
+
+        .student-card.theme-neon .student-photo {
+            border-color: #00ffff;
+            border-width: 4px;
+            box-shadow: 0 0 50px rgba(0, 255, 255, 1), inset 0 0 40px rgba(0, 255, 255, 0.5);
+            animation: photoNeon 2s ease-in-out infinite;
+        }
+
+        @keyframes photoNeon {
+            0%, 100% { 
+                box-shadow: 0 0 50px rgba(0, 255, 255, 1), inset 0 0 40px rgba(0, 255, 255, 0.5);
+            }
+            50% { 
+                box-shadow: 0 0 70px rgba(0, 255, 255, 1), inset 0 0 60px rgba(0, 255, 255, 0.8);
+            }
+        }
+
+        .student-card.theme-neon .student-name {
+            color: #ff00ff;
+            text-shadow: 0 0 20px rgba(255, 0, 255, 1), 0 0 40px rgba(255, 0, 255, 0.8), 0 0 60px rgba(255, 0, 255, 0.6);
+            animation: nameNeon 2s ease-in-out infinite;
+        }
+
+        @keyframes nameNeon {
+            0%, 100% { 
+                text-shadow: 0 0 20px rgba(255, 0, 255, 1), 0 0 40px rgba(255, 0, 255, 0.8), 0 0 60px rgba(255, 0, 255, 0.6);
+            }
+            50% { 
+                text-shadow: 0 0 30px rgba(255, 0, 255, 1), 0 0 60px rgba(255, 0, 255, 1), 0 0 90px rgba(255, 0, 255, 0.8);
+            }
+        }
+
+        .student-card.theme-neon .student-role {
+            color: #00ffff;
+            text-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 0.8), 0 0 60px rgba(0, 255, 255, 0.6);
+            animation: roleNeon 2.5s ease-in-out infinite;
+        }
+
+        @keyframes roleNeon {
+            0%, 100% { 
+                text-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 0.8), 0 0 60px rgba(0, 255, 255, 0.6);
+            }
+            50% { 
+                text-shadow: 0 0 30px rgba(0, 255, 255, 1), 0 0 60px rgba(0, 255, 255, 1), 0 0 90px rgba(0, 255, 255, 0.8);
+            }
+        }
+
+        .student-card.theme-neon .chip {
+            background: rgba(255, 0, 255, 0.4);
+            color: #ff00ff;
+            border-color: #ff00ff;
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+            text-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+        }
+
+        /* Admin Card - Special Theme for Natan */
+        .student-card.admin-card {
+            background: linear-gradient(135deg, #1a0033 0%, #2d1b69 20%, #ffd700 40%, #ffed4e 60%, #ff6b35 80%, #c41e3a 100%);
+            background-size: 400% 400%;
+            border: 4px solid #ffd700;
+            box-shadow: 
+                0 0 60px rgba(255, 215, 0, 0.9),
+                0 0 100px rgba(255, 107, 53, 0.7),
+                inset 0 0 50px rgba(255, 215, 0, 0.3),
+                inset 0 0 80px rgba(196, 30, 58, 0.2);
+            position: relative;
+            overflow: hidden;
+            animation: adminGradient 8s ease infinite, adminPulse 2s ease-in-out infinite, adminGlow 3s ease-in-out infinite;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        @keyframes adminGradient {
+            0%, 100% { background-position: 0% 50%; }
+            25% { background-position: 100% 50%; }
+            50% { background-position: 100% 100%; }
+            75% { background-position: 0% 100%; }
+        }
+
+        @keyframes adminPulse {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: 
+                    0 0 60px rgba(255, 215, 0, 0.9),
+                    0 0 100px rgba(255, 107, 53, 0.7),
+                    inset 0 0 50px rgba(255, 215, 0, 0.3),
+                    inset 0 0 80px rgba(196, 30, 58, 0.2);
+            }
+            50% { 
+                transform: scale(1.02);
+                box-shadow: 
+                    0 0 90px rgba(255, 215, 0, 1),
+                    0 0 150px rgba(255, 107, 53, 0.9),
+                    inset 0 0 70px rgba(255, 215, 0, 0.5),
+                    inset 0 0 110px rgba(196, 30, 58, 0.4);
+            }
+        }
+
+        @keyframes adminGlow {
+            0%, 100% { border-color: #ffd700; }
+            25% { border-color: #ffed4e; }
+            50% { border-color: #ff6b35; }
+            75% { border-color: #c41e3a; }
+        }
+
+        /* Admin Card Particle Effects */
+        .student-card.admin-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(255, 215, 0, 0.4) 0%, transparent 30%),
+                radial-gradient(circle at 80% 70%, rgba(255, 107, 53, 0.4) 0%, transparent 30%),
+                radial-gradient(circle at 50% 50%, rgba(196, 30, 58, 0.3) 0%, transparent 40%);
+            animation: adminParticles 6s ease-in-out infinite;
+            z-index: 0;
+        }
+
+        @keyframes adminParticles {
+            0%, 100% { 
+                transform: translate(0, 0) rotate(0deg) scale(1);
+                opacity: 0.8;
+            }
+            33% { 
+                transform: translate(30px, -30px) rotate(120deg) scale(1.1);
+                opacity: 1;
+            }
+            66% { 
+                transform: translate(-30px, 30px) rotate(-120deg) scale(0.9);
+                opacity: 0.9;
+            }
+        }
+
+        .student-card.admin-card::after {
+            content: '⭐';
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 2rem;
+            opacity: 0.8;
+            animation: starTwinkle 1.5s ease-in-out infinite, starFloat 4s ease-in-out infinite;
+            z-index: 3;
+        }
+
+        @keyframes starTwinkle {
+            0%, 100% { 
+                opacity: 0.8;
+                transform: scale(1) rotate(0deg);
+                filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));
+            }
+            50% { 
+                opacity: 1;
+                transform: scale(1.2) rotate(180deg);
+                filter: drop-shadow(0 0 25px rgba(255, 215, 0, 1));
+            }
+        }
+
+        @keyframes starFloat {
+            0%, 100% { transform: translateY(0) translateX(0); }
+            25% { transform: translateY(-10px) translateX(5px); }
+            50% { transform: translateY(-5px) translateX(-5px); }
+            75% { transform: translateY(-15px) translateX(3px); }
+        }
+
+        /* Admin Badge (Crown) */
+        .admin-badge {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ff6b35 100%);
+            color: #1a0033;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 
+                0 0 30px rgba(255, 215, 0, 0.9),
+                0 0 50px rgba(255, 107, 53, 0.7),
+                inset 0 0 20px rgba(255, 215, 0, 0.5);
+            animation: crownPulse 2s ease-in-out infinite, crownRotate 4s linear infinite;
+            z-index: 10;
+            border: 3px solid #ffd700;
+        }
+
+        @keyframes crownPulse {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: 
+                    0 0 30px rgba(255, 215, 0, 0.9),
+                    0 0 50px rgba(255, 107, 53, 0.7),
+                    inset 0 0 20px rgba(255, 215, 0, 0.5);
+            }
+            50% { 
+                transform: scale(1.15);
+                box-shadow: 
+                    0 0 50px rgba(255, 215, 0, 1),
+                    0 0 80px rgba(255, 107, 53, 0.9),
+                    inset 0 0 30px rgba(255, 215, 0, 0.7);
+            }
+        }
+
+        @keyframes crownRotate {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            50% { transform: rotate(0deg); }
+            75% { transform: rotate(5deg); }
+        }
+
+        /* Admin Shield */
+        .admin-shield {
+            position: absolute;
+            bottom: -15px;
+            left: -15px;
+            background: linear-gradient(135deg, #c41e3a 0%, #ff6b35 50%, #ffd700 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            box-shadow: 
+                0 0 25px rgba(196, 30, 58, 0.9),
+                0 0 40px rgba(255, 107, 53, 0.7),
+                inset 0 0 15px rgba(255, 215, 0, 0.4);
+            animation: shieldPulse 2.5s ease-in-out infinite, shieldFloat 3s ease-in-out infinite;
+            z-index: 10;
+            border: 3px solid #ffd700;
+        }
+
+        @keyframes shieldPulse {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: 
+                    0 0 25px rgba(196, 30, 58, 0.9),
+                    0 0 40px rgba(255, 107, 53, 0.7),
+                    inset 0 0 15px rgba(255, 215, 0, 0.4);
+            }
+            50% { 
+                transform: scale(1.1);
+                box-shadow: 
+                    0 0 40px rgba(196, 30, 58, 1),
+                    0 0 60px rgba(255, 107, 53, 0.9),
+                    inset 0 0 25px rgba(255, 215, 0, 0.6);
+            }
+        }
+
+        @keyframes shieldFloat {
+            0%, 100% { transform: translateY(0) translateX(0); }
+            50% { transform: translateY(-8px) translateX(5px); }
+        }
+
+        .student-card.admin-card:hover {
+            transform: translateY(-20px) scale(1.08) rotateY(5deg);
+            box-shadow: 
+                0 40px 120px rgba(255, 215, 0, 1),
+                0 60px 160px rgba(255, 107, 53, 0.9),
+                inset 0 0 80px rgba(255, 215, 0, 0.6),
+                inset 0 0 120px rgba(196, 30, 58, 0.5);
+            border-width: 5px;
+        }
+
+        /* Admin Photo */
+        .admin-photo {
+            border-color: #ffd700 !important;
+            border-width: 5px !important;
+            box-shadow: 
+                0 0 50px rgba(255, 215, 0, 1),
+                0 0 80px rgba(255, 107, 53, 0.8),
+                inset 0 0 40px rgba(255, 215, 0, 0.5),
+                inset 0 0 60px rgba(196, 30, 58, 0.3) !important;
+            animation: photoRoyal 3s ease-in-out infinite;
+            position: relative;
+            z-index: 2;
+        }
+
+        @keyframes photoRoyal {
+            0%, 100% { 
+                box-shadow: 
+                    0 0 50px rgba(255, 215, 0, 1),
+                    0 0 80px rgba(255, 107, 53, 0.8),
+                    inset 0 0 40px rgba(255, 215, 0, 0.5),
+                    inset 0 0 60px rgba(196, 30, 58, 0.3);
+                transform: scale(1) rotate(0deg);
+            }
+            25% { 
+                box-shadow: 
+                    0 0 70px rgba(255, 215, 0, 1),
+                    0 0 110px rgba(255, 107, 53, 1),
+                    inset 0 0 60px rgba(255, 215, 0, 0.7),
+                    inset 0 0 90px rgba(196, 30, 58, 0.5);
+                transform: scale(1.05) rotate(2deg);
+            }
+            50% { 
+                box-shadow: 
+                    0 0 90px rgba(255, 215, 0, 1),
+                    0 0 140px rgba(255, 107, 53, 1),
+                    inset 0 0 80px rgba(255, 215, 0, 0.9),
+                    inset 0 0 120px rgba(196, 30, 58, 0.7);
+                transform: scale(1.08) rotate(0deg);
+            }
+            75% { 
+                box-shadow: 
+                    0 0 70px rgba(255, 215, 0, 1),
+                    0 0 110px rgba(255, 107, 53, 1),
+                    inset 0 0 60px rgba(255, 215, 0, 0.7),
+                    inset 0 0 90px rgba(196, 30, 58, 0.5);
+                transform: scale(1.05) rotate(-2deg);
+            }
+        }
+
+        .admin-photo::before {
+            content: '';
+            position: absolute;
+            inset: -10px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ffd700, #ffed4e, #ff6b35, #c41e3a, #ffd700);
+            background-size: 300% 300%;
+            z-index: -1;
+            filter: blur(15px);
+            opacity: 0.8;
+            animation: photoGlow 3s ease infinite;
+        }
+
+        @keyframes photoGlow {
+            0%, 100% { 
+                background-position: 0% 50%;
+                opacity: 0.8;
+                transform: scale(1);
+            }
+            50% { 
+                background-position: 100% 50%;
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+
+        /* Admin Name */
+        .admin-name {
+            color: #ffd700 !important;
+            text-shadow: 
+                2px 2px 10px rgba(0, 0, 0, 0.9),
+                0 0 25px rgba(255, 215, 0, 1),
+                0 0 50px rgba(255, 107, 53, 0.9),
+                0 0 75px rgba(196, 30, 58, 0.7) !important;
+            font-weight: 800 !important;
+            font-size: 1.15rem !important;
+            animation: nameRoyal 2s ease-in-out infinite;
+            position: relative;
+            z-index: 2;
+            letter-spacing: 1px;
+        }
+
+        @keyframes nameRoyal {
+            0%, 100% { 
+                text-shadow: 
+                    2px 2px 10px rgba(0, 0, 0, 0.9),
+                    0 0 25px rgba(255, 215, 0, 1),
+                    0 0 50px rgba(255, 107, 53, 0.9),
+                    0 0 75px rgba(196, 30, 58, 0.7);
+                transform: scale(1);
+            }
+            50% { 
+                text-shadow: 
+                    2px 2px 15px rgba(0, 0, 0, 1),
+                    0 0 40px rgba(255, 215, 0, 1),
+                    0 0 80px rgba(255, 107, 53, 1),
+                    0 0 120px rgba(196, 30, 58, 0.9);
+                transform: scale(1.05);
+            }
+        }
+
+        /* Admin Role */
+        .admin-role {
+            color: #ffed4e !important;
+            text-shadow: 
+                1px 1px 8px rgba(0, 0, 0, 0.9),
+                0 0 20px rgba(255, 237, 78, 1),
+                0 0 40px rgba(255, 215, 0, 0.9),
+                0 0 60px rgba(255, 107, 53, 0.7) !important;
+            font-weight: 700 !important;
+            font-size: 1rem !important;
+            text-transform: uppercase !important;
+            letter-spacing: 2px !important;
+            animation: roleRoyal 2.5s ease-in-out infinite;
+            position: relative;
+            z-index: 2;
+        }
+
+        @keyframes roleRoyal {
+            0%, 100% { 
+                text-shadow: 
+                    1px 1px 8px rgba(0, 0, 0, 0.9),
+                    0 0 20px rgba(255, 237, 78, 1),
+                    0 0 40px rgba(255, 215, 0, 0.9),
+                    0 0 60px rgba(255, 107, 53, 0.7);
+            }
+            50% { 
+                text-shadow: 
+                    1px 1px 12px rgba(0, 0, 0, 1),
+                    0 0 35px rgba(255, 237, 78, 1),
+                    0 0 70px rgba(255, 215, 0, 1),
+                    0 0 100px rgba(255, 107, 53, 0.9);
+            }
+        }
+
+        /* Admin Chips */
+        .student-card.admin-card .chip {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.4), rgba(255, 107, 53, 0.4)) !important;
+            color: white !important;
+            border: 2px solid #ffd700 !important;
+            box-shadow: 
+                0 0 15px rgba(255, 215, 0, 0.8),
+                0 0 25px rgba(255, 107, 53, 0.6) !important;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8) !important;
+            font-weight: 600 !important;
+            position: relative;
+            z-index: 2;
+            animation: chipGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes chipGlow {
+            0%, 100% { 
+                box-shadow: 
+                    0 0 15px rgba(255, 215, 0, 0.8),
+                    0 0 25px rgba(255, 107, 53, 0.6);
+            }
+            50% { 
+                box-shadow: 
+                    0 0 25px rgba(255, 215, 0, 1),
+                    0 0 40px rgba(255, 107, 53, 0.9);
+            }
+        }
+
+        /* Admin Card - Hide theme toggle button */
+        .admin-card .theme-toggle-btn {
+            display: none;
+        }
+
+        /* Theme Modal Responsive */
+        @media (max-width: 575px) {
+            .theme-modal-content {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            .theme-modal-options {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+
+            .theme-option-btn {
+                padding: 10px 6px;
+                font-size: 0.7rem;
+            }
+
+            .theme-toggle-btn {
+                width: 24px;
+                height: 24px;
+                font-size: 0.75rem;
+            }
+
+            .admin-badge {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+                top: -15px;
+                right: -15px;
+            }
+
+            .admin-shield {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+                bottom: -12px;
+                left: -12px;
+            }
+
+            .admin-name {
+                font-size: 1rem !important;
+            }
+
+            .admin-role {
+                font-size: 0.85rem !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#home" class="skip-link">Lewati ke konten utama</a>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <img src="https://smkmetland.net/ppdb/wp-content/uploads/2022/11/cropped-cropped-cropped-LOGO-SMK-METLAND2-copy-1024x1024-4.png" alt="SMK Pariwisata Metland School Logo" />
+                    </div>
+                    <div class="school-info">
+                        <h1>SMK Pariwisata Metland School</h1>
+                        <p>Cileungsi</p>
+                    </div>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#students">Siswa</a></li>
+                        <li><a href="#awards">Penghargaan</a></li>
+                        <li><a href="#info">Info Kelas</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h1 class="fade-in-up">Kelas X PPLG 1</h1>
+                <p class="fade-in-up">Program Pengembangan Perangkat Lunak dan Gim - Generasi Digital Masa Depan</p>
+                <div class="hero-actions" aria-label="Tindakan utama">
+                    <a class="btn btn-primary" href="#students" aria-label="Lihat daftar anggota kelas">Lihat Anggota</a>
+                    <a class="btn btn-secondary" href="#info" aria-label="Baca info kelas">Info Kelas</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Announcements & Agenda Section -->
+        <section id="announcements" class="awards-section scroll-animate" aria-label="Pengumuman dan Agenda">
+            <div class="container">
+                <h2>Pengumuman & Agenda</h2>
+                <div style="display:flex; flex-direction:column; gap:14px;">
+                    <div style="background:rgba(65,179,129,0.12); border:1px solid rgba(65,179,129,0.3); padding:12px 14px; border-radius:10px; color:#2d6a5a; font-weight:600;">
+                        Pengumuman: 31 Oktober 2025 Boofest !
+                    </div>
+                    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:12px;">
+                        <div style="background:white; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.08); padding:14px;">
+                            <div style="font-weight:700; color:#333;">Senin</div>
+                            <div style="font-size:0.9rem; color:#555;">-</div>
+                        </div>
+                        <div style="background:white; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.08); padding:14px;">
+                            <div style="font-weight:700; color:#333;">Rabu</div>
+                            <div style="font-size:0.9rem; color:#555;">-</div>
+                        </div>
+                        <div style="background:white; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.08); padding:14px;">
+                            <div style="font-weight:700; color:#333;">Jumat</div>
+                            <div style="font-size:0.9rem; color:#555;">-</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Class Info Section -->
+        <section id="info" class="class-info scroll-animate">
+            <div class="container">
+                <h2>Tentang Kelas X PPLG 1</h2>
+                <div class="class-description">
+                    <p>Kelas X PPLG 1 adalah kelas yang berfokus pada pengembangan perangkat lunak dan gim. 
+                    Siswa-siswa di kelas ini akan mempelajari berbagai teknologi modern seperti pemrograman web, 
+                    mobile development, game development, dan teknologi AI. Dengan kurikulum yang terstruktur 
+                    dan pengajar yang berpengalaman dan asikk dongg, kami siap mencetak generasi developer masa depan yang 
+                    kompeten dan inovatif cihuy.</p>
+                </div>
+                <div class="structure-contact" aria-label="Struktur organisasi dan kontak">
+                    <div class="students-grid" style="margin-bottom:0; gap:20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                        <div class="student-card" style="cursor:default;">
+                            <div class="student-name">Ketua Kelas</div>
+                            <div class="student-role">Alvano Darmansyah</div>
+                        </div>
+                        <div class="student-card" style="cursor:default;">
+                            <div class="student-name">Wakil Ketua</div>
+                            <div class="student-role">Haykal wildan firdaus</div>
+                        </div>
+                        <div class="student-card" style="cursor:default;">
+                            <div class="student-name">Sekretaris</div>
+                            <div class="student-role">Keisha Nabilah Ar Rahmah, Galzerin Gloxinia Tetelepta</div>
+                        </div>
+                        <div class="student-card" style="cursor:default;">
+                            <div class="student-name">Bendahara</div>
+                            <div class="student-role">Gevin, Leon</div>
+                        </div>
+                    </div>
+                    <div style="text-align:center; margin-top:20px;">
+                        <a class="btn btn-secondary" href="https://www.instagram.com/cepuluhpplgcatu?igsh=MTQ3aWhzOG5wNXc2ag==" target="_blank" rel="noopener" aria-label="Instagram Kelas">IG Kelas</a>
+                        <a class="btn btn-primary" href="#gallery" aria-label="Lihat galeri kegiatan">Lihat Galeri</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Students Section -->
+        <section id="students" class="students-section scroll-animate">
+            <div class="container">
+                <h2>Anggota Kelas X PPLG 1</h2>
+                <!-- Pencarian Siswa -->
+                <div class="search-box" style="margin:10px 0 16px 0;">
+                    <input id="studentSearch" type="text" placeholder="Cari siswa atau minat (contoh: Basket, Codinger)" aria-label="Cari siswa" 
+                        style="width:100%; padding:10px 12px; border:1px solid #ddd; border-radius:10px; outline:none;">
+                </div>
+                <div class="students-grid">
+                    <!-- Wali Kelas -->
+                    <div class="student-card wali-card">
+                        <div class="teacher-badge">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="student-photo teacher-photo">
+                            <img src="images/Winda%20Sulistio%20Ningsih,%20S.S.jpg" alt="Winda Sulistio Ningsih, S.S " />
+                        </div>
+                        <div class="student-name teacher-name">Winda Sulistio Ningsih, S.S</div>
+                        <div class="student-role teacher-role">Wali Kelas</div>
+                    </div>
+
+                    <!-- Siswa 1-25 -->
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Alvano%20Darmansyah.jpg" alt="Alvano Darmansyah" />
+                        </div>
+                        <div class="student-name">Alvano Darmansyah</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Ketua</span><span class="chip">basket</span><span class="chip">Drummer</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/ARCKO%20TAMALOVE.jpg" alt="ARCKO TAMALOVE" />
+                        </div>
+                        <div class="student-name">ARCKO TAMALOVE</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">King Kalcer</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="talented-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="student-photo">
+                            <img src="images/Arthur%20Elshaddai%20Prasetyo.jpeg" alt="Arthur Elshaddai Prasetyo" />
+                        </div>
+                        <div class="student-name">Arthur Elshaddai Prasetyo</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Drummer</span><span class="chip">Gitaris</span><span class="chip">Sains Nasional</span><span class="chip">Codinger</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/bryand%20liaw%20san.jpg" alt="bryand liaw san" />
+                        </div>
+                        <div class="student-name">bryand liaw san</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Humble</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Chandra%20Giri%20Kusumajaya.png" alt="Chandra Giri Kusumajaya" />
+                        </div>
+                        <div class="student-name">Chandra Giri Kusumajaya</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">meme</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Daffa%20Almer%20Dzaky.png" alt="Daffa Almer Dzaky" />
+                        </div>
+                        <div class="student-name">Daffa Almer Dzaky</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">murid ambatukam</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Dariel%20ahta%20wibowo.png" alt="Dariel ahta wibowo" />
+                        </div>
+                        <div class="student-name">Dariel ahta wibowo</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Anime</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Darrel%20Satya%20Laksono.jpg" alt="Darrel Satya Laksono" />
+                        </div>
+                        <div class="student-name">Darrel Satya Laksono</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Roblox</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/denniz%20pardomuan%20hutabarat.jpg" alt="denniz pardomuan hutabarat" />
+                        </div>
+                        <div class="student-name">denniz pardomuan hutabarat</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Tier 1 Basket</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Evan%20Hendra%20Mulyadi.jpg" alt="Evan Hendra Mulyadi" />
+                        </div>
+                        <div class="student-name">Evan Hendra Mulyadi</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">King Crypton</span><span class="chip">Codinger</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Fransisco%20Valentino.jpeg" alt="Fransisco Valentino" />
+                        </div>
+                        <div class="student-name">Fransisco Valentino</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Gamer Magic Chess</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Galzerin%20Gloxinia%20Tetelepta.jpg" alt="Galzerin Gloxinia Tetelepta" />
+                        </div>
+                        <div class="student-name">Galzerin Gloxinia Tetelepta</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Gitar Bass</span><span class="chip">Metal</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Gevin.png" alt="Gevin" />
+                        </div>
+                        <div class="student-name">Gevin</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Bendahara</span><span class="chip">Basket</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Haykal%20wildan%20firdaus.png" alt="Haykal wildan firdaus" />
+                        </div>
+                        <div class="student-name">Haykal wildan firdaus</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Wakil</span><span class="chip">Sigma</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Ibrahim.jpg" alt="Ibrahim" />
+                        </div>
+                        <div class="student-name">Ibrahim</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Anime</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Jack%20Steven%20sihotang.jpg" alt="Jack Steven sihotang" />
+                        </div>
+                        <div class="student-name">Jack Steven sihotang</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Billiard</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Khaulfi%20alfarisy.jpg" alt="Khaulfi alfarisy" />
+                        </div>
+                        <div class="student-name">Khaulfi alfarisy</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Basket</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Keysia.png" alt="Keysia" />
+                        </div>
+                        <div class="student-name">Keisha Nabilah Ar Rahmah</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Sekretaris</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Leon%20Manuel%20Nadeak.png" alt="Leon Manuel Nadeak" />
+                        </div>
+                        <div class="student-name">Leon Manuel Nadeak</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Basket</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/M%20Azka%20Derin%20Sulaeman.jpg" alt="M Azka Derin Sulaeman" />
+                        </div>
+                        <div class="student-name">M Azka Derin Sulaeman</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Anak Malam</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Marvel%20Viki%20Prince%20Runtuwene.png" alt="Marvel Viki Prince Runtuwene" />
+                        </div>
+                        <div class="student-name">Marvel Viki Prince Runtuwene</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Basket</span></div>
+                    </div>
+
+                    <div class="student-card admin-card" data-student="Natan">
+                        <div class="admin-badge">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="admin-shield">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="student-photo admin-photo">
+                            <img src="images/Natan.jpg" alt="Natan" />
+                        </div>
+                        <div class="student-name admin-name">Natan</div>
+                        <div class="student-role admin-role">Admin</div>
+                        <div class="chips"><span class="chip">Pianist</span><span class="chip">Gitarist</span><span class="chip">Drummer</span><span class="chip">Basket</span><span class="chip">Futsal</span><span class="chip">Codinger</span><span class="chip">Billiard</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/PATUR%20MARCELIO%20LIMBONG.png" alt="PATUR MARCELIO LIMBONG" />
+                        </div>
+                        <div class="student-name">PATUR MARCELIO LIMBONG</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">NTC</span><span class="chip">Humoris</span><span class="chip">Codinger</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/QABIL%20AIKDZEIDR%20SUHADI.png" alt="QABIL AIKDZEIDR SUHADI" />
+                        </div>
+                        <div class="student-name">QABIL AIKDZEIDR SUHADI</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Basket</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Reinhart%20althaf.jpg" alt="Reinhart althaf" />
+                        </div>
+                        <div class="student-name">Reinhart althaf</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Basket</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Vincent%20lim.jpg" alt="Vincent lim" />
+                        </div>
+                        <div class="student-name">Vincent lim</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Coding</span><span class="chip">Basket</span></div>
+                    </div>
+
+                    <div class="student-card">
+                        <div class="student-photo">
+                            <img src="images/Sabila.png" alt="Sabila" />
+                        </div>
+                        <div class="student-name">SABILA AZRA APRILIANDA</div>
+                        <div class="student-role">Siswa</div>
+                        <div class="chips"><span class="chip">Anonim</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="awards-section scroll-animate">
+            <div class="container">
+                <h2>Penghargaan Kelas</h2>
+                <div class="awards-grid">
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="award-title">Kelas Terbaik</div>
+                        <div class="award-description">Terbaik dalam bidang olahraga salah satunya adalah olahraga basket cuyy, di sini semua sesepuh basket. kalo mau nantang mending mundur aja!</div>
+                    </div>
+
+                
+
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="award-title">Inovasi Terbaik</div>
+                        <div class="award-description">Penghargaan untuk inovasi terbaik dalam pengembangan website</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="awards-section scroll-animate" aria-label="Galeri Kegiatan">
+            <div class="container">
+                <h2>Galeri Kegiatan</h2>
+                <!-- Statistik Kelas -->
+                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap:12px; margin: 0 0 20px 0;">
+                    <div style="background:linear-gradient(135deg,#41b381,#4fadb1); color:white; border-radius:12px; padding:14px; box-shadow:0 8px 18px rgba(0,0,0,0.12);">
+                        <div style="font-size:0.9rem; opacity:0.9;">Jumlah Siswa</div>
+                        <div style="font-size:1.6rem; font-weight:800;">27</div>
+                    </div>
+                    <div style="background:white; color:#2d6a5a; border:1px solid rgba(65,179,129,0.25); border-radius:12px; padding:14px;">
+                        <div style="font-size:0.9rem; opacity:0.9;">Penghargaan</div>
+                        <div style="font-size:1.6rem; font-weight:800;">8+</div>
+                    </div>
+                    <div style="background:white; color:#2d6a5a; border:1px solid rgba(65,179,129,0.25); border-radius:12px; padding:14px;">
+                        <div style="font-size:0.9rem; opacity:0.9;">Proyek</div>
+                        <div style="font-size:1.6rem; font-weight:800;">12</div>
+                    </div>
+                    <div style="background:white; color:#2d6a5a; border:1px solid rgba(65,179,129,0.25); border-radius:12px; padding:14px;">
+                        <div style="font-size:0.9rem; opacity:0.9;">Posting IG</div>
+                        <div style="font-size:1.6rem; font-weight:800;">3+</div>
+                    </div>
+                </div>
+                <!-- Jadwal Ringkas -->
+                <div style="background:white; border-radius:12px; box-shadow:0 6px 16px rgba(0,0,0,0.08); padding:16px; margin: 0 0 20px 0;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;">
+                        <div style="display:flex; align-items:center; gap:10px; color:#2d6a5a; font-weight:700;">
+                            <i class="fas fa-calendar-alt"></i>
+                            Jadwal Pelajaran (Ringkas)
+                        </div>
+                        <a href="#" aria-label="Lihat jadwal lengkap" style="background:#41b381; color:white; padding:8px 12px; border-radius:8px; text-decoration:none;">Lihat Lengkap</a>
+                    </div>
+                    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap:10px; margin-top:12px;">
+                        <div style="background:rgba(65,179,129,0.06); border:1px solid rgba(65,179,129,0.15); border-radius:8px; padding:10px;">
+                            <div style="font-weight:700; color:#333;">Senin</div>
+                            <div style="font-size:0.9rem; color:#555;">B. Inggris • Budi Pekerti • Agama • Informatika</div>
+                        </div>
+                        <div style="background:rgba(65,179,129,0.06); border:1px solid rgba(65,179,129,0.15); border-radius:8px; padding:10px;">
+                            <div style="font-weight:700; color:#333;">Selasa</div>
+                            <div style="font-size:0.9rem; color:#555;">Literasi • PPKN • Seni Budaya </div>
+                        </div>
+                        <div style="background:rgba(65,179,129,0.06); border:1px solid rgba(65,179,129,0.15); border-radius:8px; padding:10px;">
+                            <div style="font-weight:700; color:#333;">Rabu</div>
+                            <div style="font-size:0.9rem; color:#555;">IPAS • PJOK</div>
+                        </div>
+                        <div style="background:rgba(65,179,129,0.06); border:1px solid rgba(65,179,129,0.15); border-radius:8px; padding:10px;">
+                            <div style="font-weight:700; color:#333;">Kamis</div>
+                            <div style="font-size:0.9rem; color:#555;">MTK • informatika • Sejarah</div>
+                        </div>
+                        <div style="background:rgba(65,179,129,0.06); border:1px solid rgba(65,179,129,0.15); border-radius:8px; padding:10px;">
+                            <div style="font-weight:700; color:#333;">Jumat</div>
+                            <div style="font-size:0.9rem; color:#555;">B. Inggris • B. Indonesia</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display:flex; gap:10px; margin:8px 0 12px 0; flex-wrap:wrap;">
+                    <button class="gallery-filter" data-filter="all" style="padding:6px 10px; border-radius:999px; border:1px solid #ddd; background:white; cursor:pointer;">Semua</button>
+                    <button class="gallery-filter" data-filter="kelas" style="padding:6px 10px; border-radius:999px; border:1px solid #ddd; background:white; cursor:pointer;">Kelas</button>
+                    <button class="gallery-filter" data-filter="kegiatan" style="padding:6px 10px; border-radius:999px; border:1px solid #ddd; background:white; cursor:pointer;">Kegiatan</button>
+                </div>
+                <div class="awards-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px;">
+                    <a href="images/XPPLG1.jpg" class="gallery-item" data-type="kelas" data-caption="Foto Kelas" aria-label="Buka foto kelas">
+                        <img src="images/XPPLG1.jpg" alt="Foto kelas X PPLG 1" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                    <a href="images/Kegiatan%202.jpg" class="gallery-item" data-type="kegiatan" data-caption="Kegiatan 2" aria-label="Buka foto kegiatan">
+                        <img src="images/Kegiatan%202.jpg" alt="Kegiatan 2" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                    <a href="images/Kegiatan%203.jpg" class="gallery-item" data-type="kegiatan" data-caption="Kegiatan 3" aria-label="Buka foto kegiatan">
+                        <img src="images/Kegiatan%203.jpg" alt="Kegiatan 3" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                    <a href="images/kegiatan%205.jpg" class="gallery-item" data-type="kegiatan" data-caption="Kegiatan 5" aria-label="Buka foto kegiatan">
+                        <img src="images/kegiatan%205.jpg" alt="Kegiatan 5" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                    <a href="images/kegiatan%206.jpg" class="gallery-item" data-type="kegiatan" data-caption="Kegiatan 6" aria-label="Buka foto kegiatan">
+                        <img src="images/kegiatan%206.jpg" alt="Kegiatan 6" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                    <a href="images/kegiatan%207.jpg" class="gallery-item" data-type="kegiatan" data-caption="Kegiatan 7" aria-label="Buka foto kegiatan">
+                        <img src="images/kegiatan%207.jpg" alt="Kegiatan 7" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                    <a href="images/kegiatan%209%20.jpg" class="gallery-item" data-type="kegiatan" data-caption="Kegiatan 9" aria-label="Buka foto kegiatan">
+                        <img src="images/kegiatan%209%20.jpg" alt="Kegiatan 9" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                    <a href="images/kegiatan%2010.jpg" class="gallery-item" data-type="kegiatan" data-caption="Kegiatan 10" aria-label="Buka foto kegiatan">
+                        <img src="images/kegiatan%2010.jpg" alt="Kegiatan 10" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                    <a href="images/kegiatan%2011.jpg" class="gallery-item" data-type="kegiatan" data-caption="Kegiatan 11" aria-label="Buka foto kegiatan">
+                        <img src="images/kegiatan%2011.jpg" alt="Kegiatan 11" style="width:100%; height:160px; object-fit:cover; border-radius:12px;" loading="lazy" />
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Theme Modal -->
+    <div class="theme-modal" id="themeModal">
+        <div class="theme-modal-content">
+            <div class="theme-modal-header">
+                <h3>🎨 Pilih Tema Card</h3>
+                <button class="theme-modal-close" id="themeModalClose">×</button>
+            </div>
+            <div class="theme-modal-student-info">
+                <div class="student-name" id="modalStudentName">Nama Siswa</div>
+            </div>
+            <div class="theme-modal-options" id="themeModalOptions">
+                <button class="theme-option-btn" data-theme="default">Default</button>
+                <button class="theme-option-btn" data-theme="bloody">🩸 Berdarah</button>
+                <button class="theme-option-btn" data-theme="halloween">🎃 Halloween</button>
+                <button class="theme-option-btn" data-theme="christmas">🎄 Christmas</button>
+                <button class="theme-option-btn" data-theme="lightning">⚡ Petir</button>
+                <button class="theme-option-btn" data-theme="ocean">🌊 Ocean</button>
+                <button class="theme-option-btn" data-theme="sunset">🌅 Sunset</button>
+                <button class="theme-option-btn" data-theme="dark">🌙 Dark</button>
+                <button class="theme-option-btn" data-theme="neon">💜 Neon</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:12px; text-align:left;">
+                <div>
+                    <div style="font-weight:700; margin-bottom:6px;">Tentang</div>
+                    <p>Profil Kelas X PPLG 1 SMK Pariwisata Metland School Cileungsi.</p>
+                </div>
+                <div>
+                    <div style="font-weight:700; margin-bottom:6px;">Tautan Cepat</div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li><a href="#students" style="color:#fff; text-decoration:none;">Anggota Kelas</a></li>
+                        <li><a href="#gallery" style="color:#fff; text-decoration:none;">Galeri</a></li>
+                        <li><a href="#announcements" style="color:#fff; text-decoration:none;">Pengumuman</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div style="font-weight:700; margin-bottom:6px;">Kontak</div>
+                    <p>Admin: <a href="https://wa.me/6285930008505" target="_blank" rel="noopener" style="color: #41b381; text-decoration: none;">+62 859 3000 8505</a></p>
+                    <p>Instagram: <a href="https://www.instagram.com/cepuluhpplgcatu?igsh=MTQ3aWhzOG5wNXc2ag==" target="_blank" rel="noopener" style="color:#41b381;">@cepuluhpplgcatu</a></p>
+                </div>
+                <div>
+                    <div style="font-weight:700; margin-bottom:6px;">Alamat</div>
+                    <p>SMK Pariwisata Metland School Cileungsi, Bogor.</p>
+                </div>
+            </div>
+            <p style="margin-top: 14px;">&copy; 2025 Kelas X PPLG 1 - SMK Pariwisata Metland School Cileungsi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all scroll-animate elements
+        document.querySelectorAll('.scroll-animate').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Lazy-load non-critical images
+        document.querySelectorAll('#students img, #gallery img').forEach(img => {
+            if (!img.hasAttribute('loading')) img.setAttribute('loading', 'lazy');
+            img.decoding = 'async';
+        });
+
+        // Student card hover effects (reduced on small screens)
+        function bindCardHover() {
+            const small = window.matchMedia('(max-width: 575px)').matches;
+            document.querySelectorAll('.student-card').forEach(card => {
+                // Skip admin-card and wali-card as they have their own hover effects
+                if (card.classList.contains('admin-card') || card.classList.contains('wali-card')) return;
+                card.onmouseenter = small ? null : function(){ this.style.transform = 'translateY(-10px) scale(1.05)'; };
+                card.onmouseleave = small ? null : function(){ this.style.transform = 'translateY(0) scale(1)'; };
+            });
+        }
+        bindCardHover();
+
+        // Pencarian siswa (nama dan chip)
+        const searchInput = document.getElementById('studentSearch');
+        if (searchInput) {
+            searchInput.addEventListener('input', function(){
+                const q = this.value.trim().toLowerCase();
+                document.querySelectorAll('#students .student-card').forEach(card => {
+                    const name = (card.querySelector('.student-name')?.textContent || '').toLowerCase();
+                    const chips = Array.from(card.querySelectorAll('.chip')).map(c=>c.textContent.toLowerCase()).join(' ');
+                    const isTeacher = card.classList.contains('wali-card');
+                    const isAdmin = card.classList.contains('admin-card');
+                    if (isTeacher || isAdmin) { card.style.display = ''; return; }
+                    card.style.display = (name.includes(q) || chips.includes(q)) ? '' : 'none';
+                });
+            });
+        }
+
+        // Award card hover effects
+        document.querySelectorAll('.award-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // Lightweight lightbox for gallery
+        (function(){
+            const overlay = document.createElement('div');
+            overlay.id = 'lightboxOverlay';
+            overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.85);display:none;align-items:center;justify-content:center;z-index:2000;padding:16px;';
+            const img = document.createElement('img');
+            img.alt = '';
+            img.style.cssText = 'max-width:95%;max-height:90%;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.5)';
+            overlay.appendChild(img);
+            overlay.addEventListener('click', ()=> overlay.style.display = 'none');
+            document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') overlay.style.display='none'; });
+            document.body.appendChild(overlay);
+            document.querySelectorAll('.gallery-item').forEach(a=>{
+                a.addEventListener('click', function(ev){
+                    ev.preventDefault();
+                    img.src = this.getAttribute('href');
+                    overlay.style.display = 'flex';
+                })
+            });
+        })();
+
+        // Activate default filter and toggle active class
+        const gf = document.querySelectorAll('.gallery-filter');
+        if (gf.length) {
+            gf.forEach(b=> b.addEventListener('click', function(){
+                gf.forEach(x=> x.classList.remove('active'));
+                this.classList.add('active');
+            }));
+            // trigger default
+            const def = document.querySelector('.gallery-filter[data-filter="all"]');
+            if (def) def.click();
+        }
+
+        // Filter galeri sederhana
+        document.querySelectorAll('.gallery-filter').forEach(btn=>{
+            btn.addEventListener('click', function(){
+                const type = this.getAttribute('data-filter');
+                document.querySelectorAll('.gallery-filter').forEach(b=> b.style.background = 'white');
+                this.style.background = 'rgba(65,179,129,0.15)';
+                document.querySelectorAll('#gallery .gallery-item').forEach(item=>{
+                    const t = item.getAttribute('data-type') || 'kegiatan';
+                    item.style.display = (type === 'all' || type === t) ? '' : 'none';
+                });
+            });
+        });
+
+        // Add parallax effect to hero section (desktop only)
+        if (window.innerWidth > 767) {
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset;
+                const hero = document.querySelector('.hero-section');
+                if (hero) {
+                    hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+                }
+            });
+        }
+
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            const icon = this.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!navMenu.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 767) {
+                navMenu.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+            bindCardHover();
+        });
+
+        // Theme System - Per Card with Database Integration
+        (function() {
+            const themeModal = document.getElementById('themeModal');
+            const themeModalClose = document.getElementById('themeModalClose');
+            const modalStudentName = document.getElementById('modalStudentName');
+            const themeModalOptions = document.getElementById('themeModalOptions');
+            let currentCard = null;
+
+            // API Configuration - Change this to your server URL
+            const API_BASE_URL = window.location.origin + '/api';
+
+            // Apply theme to specific card (with database save)
+            async function applyThemeToCard(card, theme) {
+                if (card && !card.classList.contains('wali-card') && !card.classList.contains('admin-card')) {
+                    // Remove all theme classes
+                    card.classList.remove('theme-default', 'theme-bloody', 'theme-halloween', 
+                        'theme-christmas', 'theme-lightning', 'theme-ocean', 'theme-sunset', 
+                        'theme-dark', 'theme-neon');
+                    
+                    // Add new theme class
+                    if (theme && theme !== 'default') {
+                        card.classList.add(`theme-${theme}`);
+                    }
+
+                    // Save to database via API
+                    const studentName = card.querySelector('.student-name')?.textContent?.trim() || '';
+                    if (studentName) {
+                        try {
+                            const response = await fetch(`${API_BASE_URL}/themes`, {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify({
+                                    student_name: studentName,
+                                    theme: theme || 'default'
+                                })
+                            });
+
+                            const data = await response.json();
+                            if (data.success) {
+                                console.log(`✅ Theme saved for ${studentName}:`, theme);
+                                // Also save to localStorage as backup
+                                localStorage.setItem(`cardTheme_${studentName}`, theme || 'default');
+                            } else {
+                                console.error('❌ Failed to save theme:', data.error);
+                                // Fallback to localStorage if API fails
+                                localStorage.setItem(`cardTheme_${studentName}`, theme || 'default');
+                            }
+                        } catch (error) {
+                            console.error('❌ Error saving theme to server:', error);
+                            // Fallback to localStorage if offline
+                            localStorage.setItem(`cardTheme_${studentName}`, theme || 'default');
+                        }
+                    }
+                }
+            }
+
+            // Load theme for specific card from localStorage (fallback)
+            function loadCardTheme(card) {
+                if (card && !card.classList.contains('wali-card') && !card.classList.contains('admin-card')) {
+                    const studentName = card.querySelector('.student-name')?.textContent?.trim() || '';
+                    if (studentName) {
+                        const savedTheme = localStorage.getItem(`cardTheme_${studentName}`) || 'default';
+                        if (savedTheme && savedTheme !== 'default') {
+                            card.classList.remove('theme-default', 'theme-bloody', 'theme-halloween', 
+                                'theme-christmas', 'theme-lightning', 'theme-ocean', 'theme-sunset', 
+                                'theme-dark', 'theme-neon');
+                            card.classList.add(`theme-${savedTheme}`);
+                        }
+                    }
+                }
+            }
+
+            // Load all themes from database server
+            async function loadAllThemesFromServer() {
+                try {
+                    const response = await fetch(`${API_BASE_URL}/themes`);
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch themes');
+                    }
+                    
+                    const themes = await response.json();
+                    
+                    const studentCards = document.querySelectorAll('.student-card');
+                    studentCards.forEach(card => {
+                        if (card.classList.contains('wali-card') || card.classList.contains('admin-card')) return;
+                        
+                        const studentName = card.querySelector('.student-name')?.textContent?.trim() || '';
+                        if (studentName && themes[studentName]) {
+                            const theme = themes[studentName];
+                            
+                            // Remove all theme classes
+                            card.classList.remove('theme-default', 'theme-bloody', 'theme-halloween', 
+                                'theme-christmas', 'theme-lightning', 'theme-ocean', 'theme-sunset', 
+                                'theme-dark', 'theme-neon');
+                            
+                            // Add theme from database
+                            if (theme && theme !== 'default') {
+                                card.classList.add(`theme-${theme}`);
+                            }
+                            
+                            // Also sync to localStorage
+                            localStorage.setItem(`cardTheme_${studentName}`, theme || 'default');
+                        }
+                    });
+                    
+                    console.log('✅ Themes loaded from database');
+                } catch (error) {
+                    console.error('❌ Error loading themes from server:', error);
+                    console.log('📦 Falling back to localStorage...');
+                    // Fallback: load from localStorage
+                    loadAllThemes();
+                }
+            }
+
+            // Add theme button to each card
+            function addThemeButtons() {
+                const studentCards = document.querySelectorAll('.student-card');
+                
+                studentCards.forEach(card => {
+                    // Skip wali-card and admin-card
+                    if (card.classList.contains('wali-card') || card.classList.contains('admin-card')) return;
+                    
+                    // Check if button already exists
+                    if (card.querySelector('.theme-toggle-btn')) return;
+                    
+                    // Create theme button
+                    const themeBtn = document.createElement('button');
+                    themeBtn.className = 'theme-toggle-btn';
+                    themeBtn.innerHTML = '🎨';
+                    themeBtn.setAttribute('aria-label', 'Ubah tema card');
+                    
+                    // Add click handler
+                    themeBtn.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        currentCard = card;
+                        const studentName = card.querySelector('.student-name')?.textContent?.trim() || 'Siswa';
+                        modalStudentName.textContent = studentName;
+                        
+                        // Get current theme
+                        const currentTheme = Array.from(card.classList).find(cls => cls.startsWith('theme-'))?.replace('theme-', '') || 'default';
+                        
+                        // Update active button in modal
+                        themeModalOptions.querySelectorAll('.theme-option-btn').forEach(btn => {
+                            btn.classList.remove('active');
+                            if (btn.getAttribute('data-theme') === currentTheme) {
+                                btn.classList.add('active');
+                            }
+                        });
+                        
+                        // Show modal
+                        themeModal.classList.add('active');
+                    });
+                    
+                    card.appendChild(themeBtn);
+                });
+            }
+
+            // Initialize themes on load (fallback to localStorage)
+            function loadAllThemes() {
+                const studentCards = document.querySelectorAll('.student-card');
+                studentCards.forEach(card => {
+                    loadCardTheme(card);
+                });
+            }
+
+            // Polling for real-time theme updates (every 5 seconds)
+            function startThemePolling() {
+                setInterval(async () => {
+                    try {
+                        const response = await fetch(`${API_BASE_URL}/themes/recent?minutes=1`);
+                        if (!response.ok) {
+                            throw new Error('Failed to fetch recent themes');
+                        }
+                        
+                        const recentChanges = await response.json();
+                        
+                        if (recentChanges.length > 0) {
+                            const studentCards = document.querySelectorAll('.student-card');
+                            
+                            recentChanges.forEach(change => {
+                                const card = Array.from(studentCards)
+                                    .find(c => c.querySelector('.student-name')?.textContent?.trim() === change.student_name);
+                                
+                                if (card && !card.classList.contains('wali-card') && !card.classList.contains('admin-card')) {
+                                    // Remove all theme classes
+                                    card.classList.remove('theme-default', 'theme-bloody', 'theme-halloween', 
+                                        'theme-christmas', 'theme-lightning', 'theme-ocean', 'theme-sunset', 
+                                        'theme-dark', 'theme-neon');
+                                    
+                                    // Apply new theme
+                                    if (change.theme && change.theme !== 'default') {
+                                        card.classList.add(`theme-${change.theme}`);
+                                    }
+                                    
+                                    // Sync to localStorage
+                                    localStorage.setItem(`cardTheme_${change.student_name}`, change.theme || 'default');
+                                }
+                            });
+                        }
+                    } catch (error) {
+                        // Silent fail for polling
+                        console.debug('Polling error (normal if offline):', error.message);
+                    }
+                }, 5000); // Check every 5 seconds
+            }
+
+            // Theme option button handlers
+            function initThemeModal() {
+                // Close modal handlers
+                themeModalClose.addEventListener('click', () => {
+                    themeModal.classList.remove('active');
+                });
+
+                themeModal.addEventListener('click', function(e) {
+                    if (e.target === themeModal) {
+                        themeModal.classList.remove('active');
+                    }
+                });
+
+                // Theme option buttons
+                themeModalOptions.querySelectorAll('.theme-option-btn').forEach(btn => {
+                    btn.addEventListener('click', async function() {
+                        const theme = this.getAttribute('data-theme');
+                        
+                        if (currentCard) {
+                            await applyThemeToCard(currentCard, theme);
+                            
+                            // Update active button
+                            themeModalOptions.querySelectorAll('.theme-option-btn').forEach(b => {
+                                b.classList.remove('active');
+                            });
+                            this.classList.add('active');
+                        }
+                    });
+                });
+
+                // Close on Escape key
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && themeModal.classList.contains('active')) {
+                        themeModal.classList.remove('active');
+                    }
+                });
+            }
+
+            // Initialize everything
+            async function initThemeSystem() {
+                addThemeButtons();
+                
+                // Load themes from database first, fallback to localStorage
+                await loadAllThemesFromServer();
+                
+                initThemeModal();
+                
+                // Start polling for real-time updates
+                startThemePolling();
+            }
+
+            // Run when DOM is ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initThemeSystem);
+            } else {
+                initThemeSystem();
+            }
+        })();
+    </script>
+</body>
+</html>
